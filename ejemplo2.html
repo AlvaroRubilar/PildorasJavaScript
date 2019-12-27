@@ -18,9 +18,10 @@
             <script>
                 var nombre = prompt("Introduce tu nombre por favor: ");
                 var apellido = prompt("Introduce tu apellido por favor: ");
-                document.write("<p>");
-                document.write("Bienvenido " + nombre + " " + apellido);
-                document.write("</p>");
+                var edad = prompt("Introduce tu edad: ");
+                var restando = prompt("¿Cuántos años te quieres quitar?");
+                edad -= restando;
+                document.write("<p>Bienvenido(a) " + nombre + " " + apellido + "<br>" + " Te gustaría tener " + edad + " años </p>");
 
             </script>
 
