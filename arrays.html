@@ -33,6 +33,14 @@
                     document.write(`${articulos[i]} <br>`);
 
                 }
+                document.write("</p><br> <br>");
+                articulos.shift();
+                alert("se borrará el primer elemento");
+                document.write("<p> Los artículos son:<br> <br>");
+                for (let i = 0; i < articulos.length; i++) {
+                    document.write(`${articulos[i]} <br>`);
+
+                }
                 document.write("</p>");
 
 
