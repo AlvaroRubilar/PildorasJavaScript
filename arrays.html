@@ -41,8 +41,15 @@
                     document.write(`${articulos[i]} <br>`);
 
                 }
-                document.write("</p>");
+                document.write("</p> <br> <br>");
+                articulos.pop();
+                alert("se borrará el último elemento");
+                document.write("<p> Los artículos son:<br> <br>");
+                for (let i = 0; i < articulos.length; i++) {
+                    document.write(`${articulos[i]} <br>`);
 
+                }
+                document.write("</p>");
 
 
             </script>
