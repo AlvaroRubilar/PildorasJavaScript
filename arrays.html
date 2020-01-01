@@ -21,13 +21,20 @@
                 //var articulos =["Zapatillas", "Camiseta", "Pantalón","Calcetines"];
                 //var ariculos = [];
                 var articulos = ["Zapatillas", "Camiseta", "Pantalón", "Calcetines"];
-                document.write("<p> El primer artículoes <strong>");
+                document.write("<p> El primer artículo es <strong>");
                 document.write(articulos[0] + "</strong> </p>");
                 document.write("<p> El último elemento es <strong>" + articulos[articulos.length - 1] + "</strong></p>");
                 articulos.unshift("Balón");
                 document.write("<p>Casi nos olvidamos!!! Agregamos este elemento: <strong> " + articulos[0] + "</strong></p>");
                 articulos.push(prompt("Introduce el artículo"));
                 document.write("<p>Agreguemos un elemento más al final: <strong>" + articulos[articulos.length - 1] + "</strong></p>");
+                document.write("<p> Los artículos son:<br> <br>");
+                for (let i = 0; i < articulos.length; i++) {
+                    document.write(`${articulos[i]} <br>`);
+
+                }
+                document.write("</p>");
+
 
 
             </script>
